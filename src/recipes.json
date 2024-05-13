@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Spaghetti Bolognese",
+    "items": [
+      "1 stk Løg",
+      "1 fed Hvidløg",
+      "500 g Oksekød",
+      "1 ds Hakkede tomater",
+      "0.5 ds Tomatpure",
+      "250 g Pasta"
+    ],
+    "steps": [
+      "Sæt pasta til kog",
+      "Hak og stej løg og hvidløg",
+      "Tilsæt og brun kødet",
+      "Tilsæt tomat og tomatpure"
+    ]
+  },
+  {
+    "name": "Wok med kylling",
+    "items": [
+      "1 pk Kyllingeinderfilet",
+      "450 g Wokblanding grøntsager",
+      "200 g Nudler",
+      "Sojasauce"
+    ],
+    "steps": [
+      "Kog nudler",
+      "Steg kylling",
+      "Tilsæt og steg grøntsager",
+      "Tilsæt kogte nudler og sojasauce"
+    ]
+  },
+  {
+    "name": "Chili con carne",
+    "items": [
+      "1 stk Løg",
+      "1 fed Hvidløg",
+      "1 stk Stærk chili",
+      "500 g Oksekød",
+      "1 ds Hakkede tomater",
+      "0.5 ds Tomatpure",
+      "1 ds Kidneybønner",
+      "1 ps Tortillachips",
+      "250 ml Creme fraiche"
+    ],
+    "steps": [
+      "Hak og stej løg og hvidløg",
+      "Tilsæt og brun kødet",
+      "Tilsæt tomat og tomatpure",
+      "Tilsæt chili og kidneybønner",
+      "Server med tortillachips og creme fraiche"
+    ]
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "items": [
+      "1 stk Løg",
+      "300 g Bacon i tern",
+      "3 stk Æg",
+      "250 ml Fløde",
+      "150 g Grana Padano",
+      "500 g Pasta"
+    ],
+    "steps": [
+      "Sæt pasta til kog",
+      "Steg bacon og tag det af panden igen",
+      "Hak og stej løg i samme pande",
+      "Tilsæt fløde, lad den bruse kort op og sluk for varmen",
+      "Rør æg og kogt pasta i",
+      "Rør bacon og ost i"
+    ]
+  },
+  {
+    "name": "Pastaret med pølser og tomatsauce",
+    "items": [
+      "1 stk Løg",
+      "1 stk Peberfrugt",
+      "400 g Pølser",
+      "250 ml Fløde",
+      "0.5 ds Tomatpure",
+      "250 g Pasta"
+    ],
+    "steps": [
+      "Sæt pasta til kog",
+      "Hak og stej løg og peberfrugt",
+      "Tilføj pølser skåret i små skiver og brun dem",
+      "Tilsæt fløde og tomatpure og lad det koge op"
+    ]
+  },
+  {
+    "name": "Nem Tikka Masala",
+    "items": [
+      "1 stk Løg",
+      "1 fed Hvidløg",
+      "1 pk Kyllingeinderfilet",
+      "1 ds Patak's Tikka Masala",
+      "250 g Ris"
+    ],
+    "steps": [
+      "Kog ris",
+      "Hak og stej løg og hvidløg",
+      "Tilsæt kylling og brun det",
+      "Tilsæt Tikka Masala og lad det koge op"
+    ]
+  }
+]

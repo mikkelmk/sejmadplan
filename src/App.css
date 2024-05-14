@@ -18,10 +18,21 @@
     flex-direction: column;
     width: 400px;
 
+    .explainer {
+      p {
+        font-size: 12px;
+      }
+    }
+
     .recipe-select {
       display: flex;
       justify-content: space-between;
       gap: 30px;
+    }
+
+    .total-items-entry {
+      display: flex;
+      justify-content: space-between;
     }
 
     .recipe-details {

@@ -1,12 +1,22 @@
 import { useMemo, useState } from "react";
 import "./App.css";
-import { defaultRecipesForThisWeek } from "./random.ts";
+import {
+  DEFAULT_RECIPES_PER_WEEK,
+  deterministicRandomRecipes,
+} from "./random.ts";
 
 import { Item, recipeMap, recipeNames } from "./recipes.ts";
 
 function App() {
+  const lastestSunday = useMemo(() => {
+    const d = new Date();
+    d.setDate(d.getDate() - d.getDay());
+    return d;
+  }, []);
+
+  const seed = lastestSunday.toDateString();
   const [selectedRecipes, setSelectedRecipes] = useState<string[]>(() =>
-    defaultRecipesForThisWeek(recipeNames)
+    deterministicRandomRecipes(recipeNames, seed)
   );
 
   const totalItems = useMemo(() => {
@@ -50,6 +60,13 @@ function App() {
   return (
     <div className="app-container">
       <div className="madplan">
+        <div className="explainer">
+          <p>
+            {DEFAULT_RECIPES_PER_WEEK} opskrifter er automatisk valgt for ugen
+            der starter {lastestSunday.toLocaleDateString("da-dk")}.
+          </p>
+          <p>Brug afkrydsningsfelterne for at tilpasse.</p>
+        </div>
         <h3>Tilpas</h3>
         {recipeNames.map((recipeName) => (
           <div className="recipe-select">
@@ -75,9 +92,12 @@ function App() {
         ))}
         <h3>Samlet Indkøbsliste</h3>
         {totalItems.map((item) => (
-          <p>
-            {item.amount} {item.unit} {item.name}
-          </p>
+          <div className="total-items-entry">
+            <p>
+              {item.amount} {item.unit} {item.name}
+            </p>
+            <input type="checkbox" />
+          </div>
         ))}
         <h3>Opskrifter</h3>
         {selectedRecipes.map((recipeName, i) => {

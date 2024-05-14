@@ -1,13 +1,11 @@
 import { SHA512 } from "crypto-js";
 
-const DEFAULT_RECIPES_PER_WEEK = 3;
+export const DEFAULT_RECIPES_PER_WEEK = 3;
 
-export const defaultRecipesForThisWeek = (recipeNames: string[]): string[] => {
-  // Get latest sunday and use as seed
-  const d = new Date();
-  d.setDate(d.getDate() - d.getDay());
-  const seed = d.toDateString();
-
+export const deterministicRandomRecipes = (
+  recipeNames: string[],
+  seed: string
+): string[] => {
   const randomNumbers = scuffedRandomNumbers(seed);
 
   const pickableRecipes = [...recipeNames];

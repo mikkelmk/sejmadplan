@@ -113,9 +113,17 @@ function App() {
                 </p>
               ))}
               <ol>
-                {recipe.steps.map((step) => (
-                  <li>{step}</li>
-                ))}
+                {recipe.steps.map((step) =>
+                  /^https?:\/\//.test(step) ? (
+                    <li style={{ listStyle: "none", marginLeft: "-1em" }}>
+                      <a href={step} target="_blank">
+                        {step}
+                      </a>
+                    </li>
+                  ) : (
+                    <li>{step}</li>
+                  ),
+                )}
               </ol>
             </div>
           );

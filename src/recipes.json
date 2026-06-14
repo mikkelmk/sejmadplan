@@ -11,9 +11,27 @@
     ],
     "steps": [
       "Sæt pasta til kog",
-      "Hak og stej løg og hvidløg",
+      "Hak og steg løg og hvidløg",
       "Tilsæt og brun kødet",
       "Tilsæt tomat og tomatpure"
+    ]
+  },
+  {
+    "name": "Pasta alla Norma",
+    "items": [
+      "2 stk Aubergine",
+      "1 stk Løg",
+      "4 fed Hvidløg",
+      "2 ds Hakkede tomater",
+      "0.5 ds Tomatpure",
+      "500 g Pasta"
+      "1 tsk Oregano",
+      "1 tsk Basilikum",
+      "50 g Parmesan",
+      "5 stilke Frisk basilikum"
+    ],
+    "steps": [
+      "https://gourministeriet.dk/pasta-alla-norma/"
     ]
   },
   {

@@ -1,4 +1,4 @@
-# sejmadplan.dk
+# sejmadplan
 
 <img src="public/favicon.png" width="215px" />
 

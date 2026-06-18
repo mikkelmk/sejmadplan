@@ -34,5 +34,27 @@
       "Vend spaghetti med olivenolie, citronsaft og ærter",
       "Anret med burrata, serranoskinke og basilikum"
     ]
+  },
+  {
+    "name": "Cremet svinekødsrigatoni",
+    "items": [
+      "2 stk Squash",
+      "2 stk Tomat",
+      "2 fed Hvidløg",
+      "500 g Svinekød",
+      "250 g Pasta",
+      "250 ml Fløde",
+      "50 g Parmesan",
+      "1 stk Bouillonterning",
+      "1 tsk Timian",
+      "1 tsk Paprika"
+    ],
+    "steps": [
+      "Sæt pasta til kog",
+      "Steg svinekød",
+      "Tilsæt og steg hakket squash, tomat, hvidløg og krydderier",
+      "Tilsæt fløde og bouillon og lad simre",
+      "Vend pasta i saucen og top med parmesan"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 import { SHA512 } from "crypto-js";
 
-export const DEFAULT_RECIPES_PER_WEEK = 3;
+export const DEFAULT_RECIPES_PER_WEEK = 4;
 
 export const deterministicRandomRecipes = (
   recipeNames: string[],

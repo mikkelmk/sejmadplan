@@ -18,6 +18,7 @@ function App() {
   const [selectedRecipes, setSelectedRecipes] = useState<string[]>(() =>
     deterministicRandomRecipes(recipeNames, seed)
   );
+  const [tilpasMode, setTilpasMode] = useState(false);
 
   const totalItems = useMemo(() => {
     const stats: Record<string, Record<string, number>> = {};
@@ -65,31 +66,49 @@ function App() {
             {DEFAULT_RECIPES_PER_WEEK} opskrifter er automatisk valgt for ugen
             der starter {lastestSunday.toLocaleDateString("da-dk")}.
           </p>
-          <p>Brug afkrydsningsfelterne for at tilpasse.</p>
         </div>
-        <h3>Tilpas</h3>
-        {recipeNames.map((recipeName) => (
-          <div className="recipe-select">
-            <p>{recipeName}</p>
-            <input
-              type="checkbox"
-              checked={selectedRecipes.includes(recipeName)}
-              onChange={() => {
-                if (!selectedRecipes.includes(recipeName)) {
-                  setSelectedRecipes([...selectedRecipes, recipeName]);
-                } else {
-                  setSelectedRecipes(
-                    selectedRecipes.filter((r) => r !== recipeName)
-                  );
-                }
-              }}
-            />
-          </div>
-        ))}
-        <h3>Ugens Menu</h3>
-        {selectedRecipes.map((recipeName) => (
-          <p>{recipeName}</p>
-        ))}
+        {tilpasMode ? (
+          <>
+            <h3>Tilpas</h3>
+            {recipeNames.map((recipeName) => (
+              <div className="recipe-select">
+                <p>{recipeName}</p>
+                <input
+                  type="checkbox"
+                  checked={selectedRecipes.includes(recipeName)}
+                  onChange={() => {
+                    if (!selectedRecipes.includes(recipeName)) {
+                      setSelectedRecipes([...selectedRecipes, recipeName]);
+                    } else {
+                      setSelectedRecipes(
+                        selectedRecipes.filter((r) => r !== recipeName)
+                      );
+                    }
+                  }}
+                />
+              </div>
+            ))}
+            <button
+              className="tilpas-toggle"
+              onClick={() => setTilpasMode(false)}
+            >
+              Færdig
+            </button>
+          </>
+        ) : (
+          <>
+            <h3>Ugens Menu</h3>
+            {selectedRecipes.map((recipeName) => (
+              <p>{recipeName}</p>
+            ))}
+            <button
+              className="tilpas-toggle"
+              onClick={() => setTilpasMode(true)}
+            >
+              Tilpas
+            </button>
+          </>
+        )}
         <h3>Samlet Indkøbsliste</h3>
         {totalItems.map((item) => (
           <div className="total-items-entry">
@@ -105,7 +124,7 @@ function App() {
           return (
             <div className="recipe-details">
               <h4>
-                {i + 1}) {recipeName}
+                {i + 1}. {recipeName}
               </h4>
               {recipe.items.map((item) => (
                 <p>

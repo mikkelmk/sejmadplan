@@ -22,8 +22,8 @@
     "name": "Spaghetti med ærter, burrata og serrano",
     "items": [
       "1 stk Citron",
-      "150 g Serranoskinke",
-      "400 g Spaghetti",
+      "180 g Serranoskinke",
+      "500 g Spaghetti",
       "250 g Ærter",
       "2 stk Burrata",
       "2 spsk Olivenolie",
@@ -77,6 +77,50 @@
       "Tilsæt og steg hakket løg, peberfrugt og hvidløg",
       "Tilsæt tomatpure, tomat, bouillon, parmesan, mascarpone og oregano og lad simre",
       "Kog pasta og vend i saucen"
+    ]
+  },
+  {
+    "name": "Cremet pasta med kylling og champignon",
+    "items": [
+      "1 stk Løg",
+      "2 fed Hvidløg",
+      "100 g Champignon",
+      "70 g Soltørrede tomater",
+      "450 g Kyllingebryst",
+      "250 g Pasta",
+      "250 ml Fløde",
+      "50 g Parmesan",
+      "1 stk Bouillonterning",
+      "1 tsk Timian"
+    ],
+    "steps": [
+      "Sæt pasta til kog",
+      "Steg løg og hvidløg",
+      "Tilsæt og steg kylling i mindre stykker",
+      "Tilsæt og steg soltørrede tomater og champignon",
+      "Tilsæt fløde, bouillon, parmesan og timian og lad simre",
+      "Vend pasta i saucen"
+    ]
+  },
+  {
+    "name": "Cremet gnocchi med bacon og squash",
+    "items": [
+      "1 stk Løg",
+      "2 fed Hvidløg",
+      "1 stk Squash",
+      "75 g Spinat",
+      "500 g Gnocchi",
+      "200 g Bacon",
+      "250 ml Fløde",
+      "50 g Parmesan",
+      "1 stk Bouillonterning",
+      "1 tsk Timian"
+    ],
+    "steps": [
+      "Steg gnocchi under omrøring og sæt til side",
+      "Steg bacon, og tilsæt en efter en løg, squash og hvidløg",
+      "Tilsæt fløde, bouillon, parmesan og timian og lad simre",
+      "Vend gnocchi og spinat i saucen"
     ]
   }
 ]

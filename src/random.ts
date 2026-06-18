@@ -11,6 +11,9 @@ export const deterministicRandomRecipes = (
   const pickableRecipes = [...recipeNames];
   const pickedRecipes = [];
   for (const r of randomNumbers) {
+    if (pickableRecipes.length === 0) {
+      break;
+    }
     const index = r % pickableRecipes.length;
     pickedRecipes.push(pickableRecipes[index]);
     pickableRecipes.splice(index, 1);

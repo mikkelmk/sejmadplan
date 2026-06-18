@@ -15,7 +15,7 @@
       "Sæt pasta til kog",
       "Hak og steg løg og hvidløg",
       "Tilsæt og brun kødet",
-      "Tilsæt tomat, tomatpure, timian og bouillon"
+      "Tilsæt tomatpure, tomat, timian og bouillon"
     ]
   },
   {
@@ -53,8 +53,30 @@
       "Sæt pasta til kog",
       "Steg svinekød",
       "Tilsæt og steg hakket squash, tomat, hvidløg og krydderier",
-      "Tilsæt fløde og bouillon og lad simre",
-      "Vend pasta i saucen og top med parmesan"
+      "Tilsæt fløde, bouillon og parmesan og lad simre",
+      "Vend pasta i saucen"
+    ]
+  },
+  {
+    "name": "Cremet pasta med salsiccia, mascarpone og tomat",
+    "items": [
+      "1 stk Løg",
+      "1 stk Rød peberfrugt",
+      "2 fed Hvidløg",
+      "500 g Pasta",
+      "400 g Salsiccia",
+      "1 ds Hakkede tomater",
+      "0.5 ds Tomatpure",
+      "250 g Mascarpone",
+      "50 g Parmesan",
+      "1 stk Bouillonterning",
+      "1 tsk Oregano"
+    ],
+    "steps": [
+      "Steg salsiccia i større klumper",
+      "Tilsæt og steg hakket løg, peberfrugt og hvidløg",
+      "Tilsæt tomatpure, tomat, bouillon, parmesan, mascarpone og oregano og lad simre",
+      "Kog pasta og vend i saucen"
     ]
   }
 ]
